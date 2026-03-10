@@ -27,17 +27,6 @@ export default function Hero() {
       opacity: 0,
       duration: 0.6,
     });
-
-    // tl.from(".burger", {
-    //   x: 800,
-    //   duration: 1.4,
-    //   rotate: 0,
-    // });
-
-    // tl.to(".burger", {
-    //   rotation: -10,
-    //   duration: 0.25,
-    // });
   }, []);
 
   return (
@@ -65,16 +54,6 @@ export default function Hero() {
           className="skateboard object-cover absolute -right-40 -top-40 rotate-[4deg] -translate-x-1/2"
         />
       </div>
-
-      {/* <Image
-        src="/smoke.png"
-        alt="hero image"
-        // fill
-        priority
-        width={500}
-        height={500}
-        className="smoke object-cover absolute -top-46 left-1/2 -translate-x-1/2 opacity-0"
-      /> */}
       <div className="absolute bottom-0 left-0 w-full">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -84,12 +63,15 @@ export default function Hero() {
           ></path>
         </svg>
       </div>
-      <div className="w-1/3 absolute left-30 top-70 hero-text text">
+      <div className="w-1/3 absolute left-30 top-50 hero-text text">
         <h1 className="text-[3rem] font-bold">Street Flavor. Full Speed.</h1>
         <p className="">
           Burgers that drip, shawarmas that wrap perfection, wings that crunch,
           chips that satisfy, and smoothies that cool the ride.
         </p>
+        <button className="bg-[#FFBF10] text-[#212121] text-[1.125rem] font-semibold px-4 py-3 rounded-[24px] mt-4">
+          Order now
+        </button>
       </div>
     </section>
   );

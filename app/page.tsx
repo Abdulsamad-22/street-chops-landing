@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/nav";
 import OurMenu from "@/components/ourMenu";
@@ -10,6 +11,7 @@ export default function Home() {
       </div>
       <Hero />
       <OurMenu />
+      <Footer />
     </div>
   );
 }
