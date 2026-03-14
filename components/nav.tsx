@@ -3,11 +3,12 @@ import Link from "next/link";
 import { List } from "@phosphor-icons/react";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-// import { useGSAP } from "@gsap/react";
-// import gsap from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Navbar() {
-  // useGSAP(() => {
+  // useEffect(() => {
   //   const navTween = gsap.timeline({
   //     scrollTrigger: {
   //       trigger: "nav",
@@ -43,26 +44,12 @@ export default function Navbar() {
     document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
   }, [isMenuOpen]);
 
-  // useEffect(() => {
-  //   const handleClick = () => {
-  //     setIsMenuOpen(false);
-  //   };
-
-  //   if (isMenuOpen) {
-  //     document.body.addEventListener("click", handleClick);
-  //   }
-
-  //   return () => {
-  //     document.body.removeEventListener("click", handleClick);
-  //   };
-  // }, [isMenuOpen]);
-
   return (
     <nav
       id="nav-element"
-      className="w-[90%] bg-[#f3f3f3] flex items-center justify-between fixed top-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)] backdrop-blur-sm px-2 md:px-4 py-2 lg:py-3 rounded-[38px] z-5"
+      className="w-full md:w-[90%] bg-[#f3f3f3] flex items-center justify-between fixed top-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)] backdrop-blur-sm px-2 md:px-4 py-2 lg:py-3 md:rounded-[38px] z-5"
     >
-      <div className="w-1/3 text-[2rem] font-bold">Paddi Chops</div>
+      <div className="w-1/3 text-[2rem] font-bold">Elora</div>
       <div className="w-2/3 hidden lg:flex items-center justify-center space-x-8 p-2">
         {["Home", "About", "Our menu"].map((item) => {
           const href =
