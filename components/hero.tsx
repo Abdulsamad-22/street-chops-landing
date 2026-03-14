@@ -22,6 +22,16 @@ export default function Hero() {
         repeat: 1,
       });
 
+    tl.from(".onion-image", {
+      x: 300,
+      duration: 0.4,
+    });
+
+    tl.from(".pizza-image", {
+      x: -300,
+      duration: 0.4,
+    });
+
     tl.from(".hero-text", {
       y: 40,
       opacity: 0,
@@ -30,28 +40,30 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative bg-[#B70E10] min-h-screen w-full text-[#fff] px-8 mb-12">
-      {/* <div>Welcome to Paddi Chops</div> */}
-
+    <section className="relative bg-[#B70E10] min-h-screen w-full text-[#fff] px-8 mb-12 overflow-hidden">
       <div ref={container} className="relative">
         <Image
-          src="/hero-image.png"
+          src="/Frame 5.png"
           alt="hero image"
-          // fill
-          priority
           width={550}
           height={350}
-          className="burger object-cover absolute absolute -right-40 top-25 -translate-x-1/2 z-1"
+          className="burger object-cover absolute absolute -right-40 top-6 rotate-[2deg] -translate-x-1/2 z-1"
         />
 
         <Image
-          src="/skateboard.png"
-          alt="hero image"
-          // fill
-          priority
-          width={500}
-          height={250}
-          className="skateboard object-cover absolute -right-40 -top-40 rotate-[4deg] -translate-x-1/2"
+          src="/bgImage.png"
+          alt="background image"
+          width={280}
+          height={200}
+          className="onion-image object-cover absolute top-15 -right-20"
+        />
+
+        <Image
+          src="/pizzaBg.png"
+          alt="background image"
+          width={280}
+          height={200}
+          className="pizza-image object-cover absolute top-25 -left-40"
         />
       </div>
       <div className="absolute bottom-0 left-0 w-full">
@@ -63,13 +75,14 @@ export default function Hero() {
           ></path>
         </svg>
       </div>
-      <div className="w-1/3 absolute left-30 top-50 hero-text text">
+      <div className="w-full md:w-1/3 absolute left-45 top-50 hero-text text">
         <h1 className="text-[3rem] font-bold">Street Flavor. Full Speed.</h1>
         <p className="">
           Burgers that drip, shawarmas that wrap perfection, wings that crunch,
-          chips that satisfy, and smoothies that cool the ride.
+          chips that satisfy, and smoothies that cool the ride. Stop by at{" "}
+          <strong>Paddi Chops</strong> to have a taste of greatness.
         </p>
-        <button className="bg-[#FFBF10] text-[#212121] text-[1.125rem] font-semibold px-4 py-3 rounded-[24px] mt-4">
+        <button className="bg-[#FFBF10] text-[#212121] text-[1.125rem] font-semibold px-4 py-3 rounded-[24px] cursor-pointer mt-4">
           Order now
         </button>
       </div>
