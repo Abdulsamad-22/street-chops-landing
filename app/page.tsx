@@ -1,6 +1,8 @@
 import Footer from "@/components/footer";
+import OurGallery from "@/components/gallery";
 import Hero from "@/components/hero";
 import Navbar from "@/components/nav";
+import OpeningHours from "@/components/openingHours";
 import OurMenu from "@/components/ourMenu";
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
       </div>
       <Hero />
       <OurMenu />
+      <OpeningHours />
+      <OurGallery />
       <Footer />
     </div>
   );
