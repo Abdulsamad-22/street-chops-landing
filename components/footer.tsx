@@ -6,11 +6,37 @@ import {
   InstagramLogo,
   XLogo,
 } from "@phosphor-icons/react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <>
-      <footer className="bg-gray-100 py-10 px-6 md:px-12 mt-20">
+      <footer className="potato-section relative overflow-hidden bg-gray-100 py-10 px-6 md:px-12 mt-20">
+        <div className="potato-container absolute inset-0 pointer-events-none"></div>
+        <Image
+          src="/fallingShadows.png"
+          alt="background image"
+          width={180}
+          height={100}
+          className="pizza-image object-cover absolute bottom-0 -right-20 rotate-[90deg]"
+        />
+
+        <Image
+          src="/fallingShadows.png"
+          alt="background image"
+          width={120}
+          height={100}
+          className="pizza-image object-cover absolute -top-5 right-6"
+        />
+
+        <Image
+          src="/fallingShadows.png"
+          alt="background image"
+          width={130}
+          height={120}
+          className="pizza-image object-cover absolute bottom-10 left-0"
+        />
+
         <section className="flex flex-col md:flex-row gap-8 justify-between text-[#4B5563] py-4">
           <div className="w-full md:w-1/3">
             <div className="text-[2rem] font-bold italic">Elora</div>
@@ -19,9 +45,6 @@ export default function Footer() {
               Your trusted partner in buying, selling, and investing in
               property.
             </p>
-            {/* <p className="mb-6 font-bold text-black text-lg">
-              Join Our Email List
-            </p> */}
           </div>
 
           <div className="w-2/3 flex flex-col md:flex-row items-start justify-end gap-8 md:gap-20">
