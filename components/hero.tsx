@@ -47,7 +47,7 @@ export default function Hero() {
           alt="hero image"
           width={550}
           height={350}
-          className="burger object-cover absolute absolute -right-40 top-6 rotate-[2deg] -translate-x-1/2 z-1"
+          className="burger object-cover absolute absolute -right-40 md:top-6 top-70 rotate-[2deg] -translate-x-1/2 md:z-1"
         />
 
         <Image
@@ -75,7 +75,7 @@ export default function Hero() {
           ></path>
         </svg>
       </div>
-      <div className="w-full md:w-1/3 absolute left-45 top-50 hero-text text">
+      <div className="w-full md:w-1/3 absolute md:left-45 top-50 hero-text text z-1">
         <h1 className="text-[3rem] font-bold">Street Flavor. Full Speed.</h1>
         <p className="">
           Burgers that drip, shawarmas that wrap perfection, wings that crunch,

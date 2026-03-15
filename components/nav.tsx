@@ -47,7 +47,7 @@ export default function Navbar() {
   return (
     <nav
       id="nav-element"
-      className="w-full md:w-[90%] bg-[#f3f3f3] flex items-center justify-between fixed top-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)] backdrop-blur-sm px-2 md:px-4 py-2 lg:py-3 md:rounded-[38px] z-5"
+      className="w-full md:w-[90%] bg-[#f3f3f3] flex items-center justify-between fixed top-0 md:top-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)] backdrop-blur-sm px-2 md:px-4 py-2 lg:py-3 md:rounded-[38px] z-5"
     >
       <div className="w-1/3 text-[2rem] font-bold">Elora</div>
       <div className="w-2/3 hidden lg:flex items-center justify-center space-x-8 p-2">

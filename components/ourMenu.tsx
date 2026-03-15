@@ -61,7 +61,7 @@ export default function OurMenu() {
               if (el) cardsRef.current[index] = el;
             }}
             key={index}
-            className="menu-card bg-[#fff] hover:bg-[#b70e10] hover:text-[#f3f3f3] transition-colors transform-0.5 flex flex-col w-60 border-[1px] border-[#EEE9E6] rounded-[0px]"
+            className="menu-card bg-[#fff] hover:bg-[#b70e10] hover:text-[#f3f3f3] transition-colors duration-600 flex flex-col w-60 border-[1px] border-[#EEE9E6] rounded-[0px]"
           >
             <div className="relative w-full h-50 md:h-60 lg:h-55">
               <Image src={item.image} fill alt="house image" className="" />
