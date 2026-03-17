@@ -57,9 +57,12 @@ export default function OurGallery() {
     );
   }, [activeCategory]);
   return (
-    <section ref={containerRef}>
-      <h3 className="text-center text-[1.5rem] font-bold mb-4">Our Gallery</h3>
-      <div className="flex flex-wrap gap-4 justify-center mb-12">
+    <section ref={containerRef} className="px-4 sm:px-6 md:px-8 lg:px-12">
+      <h3 className="text-center text-xl sm:text-2xl md:text-[1.5rem] font-bold mb-4 sm:mb-6">
+        Our Gallery
+      </h3>
+
+      <div className="flex flex-wrap gap-1 sm:gap-1 md:gap-2 justify-center mb-8 sm:mb-10 md:mb-12">
         {categories.map((cat) => {
           const active = cat === activeCategory;
 
@@ -67,8 +70,8 @@ export default function OurGallery() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`text-[0.875rem] md:text-[1.25rem] capitalize cursor-pointer
-              ${active ? "text-[#B70E10] font-semibold" : "text-black"}`}
+              className={`text-sm sm:text-base md:text-lg lg:text-[1.25rem] capitalize cursor-pointer px-3 py-1 sm:px-4 sm:py-2 transition-colors
+          ${active ? "text-[#B70E10] font-semibold" : "text-black hover:text-[#B70E10]/70"}`}
             >
               {cat}
             </button>
@@ -78,18 +81,18 @@ export default function OurGallery() {
 
       <div
         ref={gridRef}
-        className="flex flex-wrap justify-center gap-4 max-w-[900px] mx-auto"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 max-w-[900px] mx-auto"
       >
         {filteredImages.map((item, index) => (
           <div
             key={index}
-            className="relative w-[280px] h-[200px] md:h-[240px] lg:h-[260px]"
+            className="relative w-full aspect-[4/3] overflow-hidden rounded-lg sm:rounded-xl"
           >
             <Image
               src={item.image}
               alt={item.category}
               fill
-              className="gallery-item relative w-full sm:w-[48%] lg:w-[31%] h-[220px] md:h-[240px] lg:h-[260px] overflow-hidden rounded-xl"
+              className="gallery-item object-cover"
             />
           </div>
         ))}

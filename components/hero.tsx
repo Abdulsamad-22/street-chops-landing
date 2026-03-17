@@ -47,7 +47,7 @@ export default function Hero() {
           alt="hero image"
           width={550}
           height={350}
-          className="burger object-cover absolute absolute -right-40 md:top-6 top-70 rotate-[2deg] -translate-x-1/2 md:z-1"
+          className="burger object-cover absolute absolute -right-50 md:-right-40 md:top-6 top-70 rotate-[2deg] -translate-x-1/2 md:z-1"
         />
 
         <Image
@@ -55,7 +55,10 @@ export default function Hero() {
           alt="background image"
           width={280}
           height={200}
-          className="onion-image object-cover absolute top-15 -right-20"
+          className="onion-image absolute object-contain 
+             w-[180px] sm:w-[180px] md:w-[220px] lg:w-[280px]
+             top-80 sm:top-10 md:top-14
+-right-16 sm:-right-12 md:-right-20"
         />
 
         <Image
@@ -63,7 +66,7 @@ export default function Hero() {
           alt="background image"
           width={280}
           height={200}
-          className="pizza-image object-cover absolute top-25 -left-40"
+          className="pizza-image object-cover w-[180px] sm:w-[180px] md:w-[220px] lg:w-[280px] absolute top-16 md:top-25 -left-30 md:-left-40"
         />
       </div>
       <div className="absolute bottom-0 left-0 w-full">
@@ -75,9 +78,11 @@ export default function Hero() {
           ></path>
         </svg>
       </div>
-      <div className="w-full md:w-1/3 absolute md:left-45 top-50 hero-text text z-1">
-        <h1 className="text-[3rem] font-bold">Street Flavor. Full Speed.</h1>
-        <p className="">
+      <div className="w-full md:w-1/3 absolute left-0 md:left-45 top-50 md:top-50 hero-text px-4 z-1">
+        <h1 className="text-[2rem] md:text-[3rem] font-bold">
+          Street Flavor. Full Speed.
+        </h1>
+        <p className="text-[0.875rem] md:text-[1rem]">
           Burgers that drip, shawarmas that wrap perfection, wings that crunch,
           chips that satisfy, and smoothies that cool the ride. Stop by at{" "}
           <strong>Paddi Chops</strong> to have a taste of greatness.
