@@ -8,7 +8,7 @@ export default function OpeningHours() {
       </h2>
 
       <div className="">
-        <div className="relative flex flex-col md:flex-row bg-[#b70e10] w-full h-140 py-12 px-8 overflow-hidden">
+        <div className="relative flex flex-col md:flex-row gap-12 bg-[#b70e10] w-full h-350 md:h-140 py-12 px-8 overflow-hidden">
           <Image
             src="/alubosa.png"
             alt="background image"
@@ -24,7 +24,7 @@ export default function OpeningHours() {
             height={200}
             className="object-cover absolute top-0 left-20 -translate-x-1/2 rotate-[60deg]"
           />
-          <div className="relative w-full md:w-[30%] md:h-[100%] bg-[#fff] rounded-tl-[250px] rounded-br-[250px]">
+          <div className="relative w-full md:w-[30%] h-[30%] md:h-[100%] bg-[#fff] rounded-tl-[250px] rounded-br-[250px]">
             <div>
               <Image
                 src={"/unsplash_O95r2WVvtr0.png"}
@@ -34,7 +34,7 @@ export default function OpeningHours() {
               />
             </div>
           </div>
-          <div className="relative bg-[#fff] w-[30%] h-[100%] mx-auto rounded-b-[200px] pt-10 pb-4 px-8">
+          <div className="relative bg-[#fff] w-full md:w-[30%] h-[40%] md:h-[100%] mx-auto rounded-b-[200px] pt-10 pb-4 px-8">
             {openingSchedule.map((activity, idx) => (
               <div key={idx} className="flex gap-8 justify-center space-y-3">
                 <div className="w-full md:w-1/2 ">
@@ -58,7 +58,7 @@ export default function OpeningHours() {
               />
             </div>
           </div>
-          <div className="relative w-full md:w-[30%] md:h-[100%] bg-[#fff] rounded-tr-[250px] rounded-bl-[250px]">
+          <div className="relative w-full md:w-[30%] h-[30%] md:h-[100%] bg-[#fff] rounded-tr-[250px] rounded-bl-[250px]">
             <Image
               src={"/unsplash_-fGRJrT2tEE.png"}
               alt=""
