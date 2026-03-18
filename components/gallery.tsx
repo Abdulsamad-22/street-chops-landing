@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 export default function OurGallery() {
   const containerRef = useRef(null);
-  const gridRef = useRef(null);
+  const gridRef = useRef<HTMLDivElement | null>(null);
   const [activeCategory, setActiveCategory] = useState("all");
   const categories = [
     "all",
@@ -41,6 +41,7 @@ export default function OurGallery() {
   }, []);
 
   useEffect(() => {
+    if (!gridRef.current) return;
     const items = gridRef.current.children;
 
     gsap.fromTo(
