@@ -34,7 +34,7 @@ export default function Footer() {
           alt="background image"
           width={130}
           height={120}
-          className="pizza-image object-cover absolute bottom-10 left-0"
+          className="pizza-image object-cover absolute bottom-10 right-0 md:left-0"
         />
 
         <section className="flex flex-col md:flex-row gap-8 justify-between text-[#4B5563] py-4">
@@ -68,7 +68,7 @@ export default function Footer() {
 
             <div>
               <h3 className="font-bold text-lg mb-2">Get In Touch</h3>
-              <p className="text-[#BF6028] font-bold mb-2 text-1xl">
+              <p className="text-[#B70e10] font-bold mb-2 text-1xl">
                 +(84) - 1800 - 4635
               </p>
               <p className="mb-5">abdulsamadhussaini001@gmail.com</p>

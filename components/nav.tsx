@@ -129,7 +129,7 @@ export default function Navbar() {
 
         <div>
           <div className="w-full">
-            <button className="bg-[#BF6028] text-[#f3f3f3] px-4 py-3 rounded-[8px] cursor-pointer">
+            <button className="bg-[#b70e10] text-[#f3f3f3] px-4 py-3 rounded-[8px] cursor-pointer">
               See Our Menu
             </button>
           </div>
