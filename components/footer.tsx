@@ -39,7 +39,15 @@ export default function Footer() {
 
         <section className="flex flex-col md:flex-row gap-8 justify-between text-[#4B5563] py-4">
           <div className="w-full md:w-1/3">
-            <div className="text-[2rem] font-bold italic">Elora</div>
+            <div className="mb-2">
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={50}
+                height={50}
+                className=""
+              />
+            </div>
 
             <p className="mb-6">
               Your trusted partner in buying, selling, and investing in
@@ -49,28 +57,32 @@ export default function Footer() {
 
           <div className="w-2/3 flex flex-col md:flex-row items-start justify-end gap-8 md:gap-20">
             <div>
-              <h3 className="font-bold text-lg mb-2">About Us</h3>
+              <h3 className="font-bold text-[#b70e10] text-lg mb-2">
+                About Us
+              </h3>
               <ul>
-                <li className="mb-2">Policy Priorities</li>
-                <li className="mb-2">Payment Plan</li>
+                <li className="mb-2">Opening Hours</li>
+                <li className="mb-2">Delivery Plan</li>
                 <li className="mb-2">Projects</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-bold text-lg mb-2">Support Us</h3>
+              <h3 className="font-bold text-[#b70e10] text-lg mb-2">
+                Our Menu
+              </h3>
               <ul>
-                <li className="mb-2">Store</li>
-                <li className="mb-2">Property Listings</li>
-                <li className="mb-2">Blog</li>
+                <li className="mb-2">Burger</li>
+                <li className="mb-2">Shawarma</li>
+                <li className="mb-2">Fries & Chickin Wings</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-bold text-lg mb-2">Get In Touch</h3>
-              <p className="text-[#B70e10] font-bold mb-2 text-1xl">
-                +(84) - 1800 - 4635
-              </p>
+              <h3 className="font-bold text-[#b70e10] text-lg mb-2">
+                Get In Touch
+              </h3>
+              <p className="font-bold mb-2 text-1xl">+(84) - 1800 - 4635</p>
               <p className="mb-5">abdulsamadhussaini001@gmail.com</p>
               <div className="flex flex-row gap-5">
                 <a href="#">
