@@ -5,33 +5,34 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import Image from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Navbar() {
-  // useEffect(() => {
-  //   const navTween = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: "nav",
-  //       start: "bottom top",
-  //     },
-  //   });
+  useEffect(() => {
+    const navTween = gsap.timeline({
+      scrollTrigger: {
+        trigger: "nav",
+        start: "bottom top",
+      },
+    });
 
-  //   navTween.fromTo(
-  //     "nav",
-  //     {
-  //       backgroundColor: "#f3f3f3",
-  //       color: "#212121",
-  //     },
-  //     {
-  //       backgroundColor: "#21212150",
-  //       color: "#f3f3f3",
-  //       // backgroundFilter: "blur(10px)",
-  //       opacity: "blur(10px)",
-  //       duration: 1,
-  //       ease: "power1.inOut",
-  //     },
-  //   );
-  // }, []);
+    navTween.fromTo(
+      "nav",
+      {
+        backgroundColor: "#f3f3f3",
+        color: "#212121",
+      },
+      {
+        backgroundColor: "#21212150",
+        color: "#f3f3f3",
+        // backgroundFilter: "blur(10px)",
+        opacity: "blur(10px)",
+        duration: 1,
+        ease: "power1.inOut",
+      },
+    );
+  }, []);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -47,9 +48,11 @@ export default function Navbar() {
   return (
     <nav
       id="nav-element"
-      className="w-full md:w-[90%] bg-[#f3f3f3] flex items-center justify-between fixed top-0 md:top-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)] backdrop-blur-sm px-2 md:px-4 py-2 lg:py-3 md:rounded-[38px] z-5"
+      className="w-full md:w-[90%] bg-[#f3f3f3] flex items-center justify-between fixed top-0 md:top-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)] backdrop-blur-sm px-2 md:pl-6 md:pr-3 py-2 lg:py-3 md:rounded-[38px] z-50"
     >
-      <div className="w-1/3 text-[2rem] font-bold">Elora</div>
+      <div className="w-1/3 text-[2rem] font-bold">
+        <Image src="/logo.png" alt="logo" width={45} height={45} className="" />
+      </div>
       <div className="w-2/3 hidden lg:flex items-center justify-center space-x-8 p-2">
         {["Home", "About", "Our menu"].map((item) => {
           const href =
