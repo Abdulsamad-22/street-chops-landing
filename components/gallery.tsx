@@ -58,7 +58,10 @@ export default function OurGallery() {
     );
   }, [activeCategory]);
   return (
-    <section ref={containerRef} className="px-4 sm:px-6 md:px-8 lg:px-12">
+    <section
+      ref={containerRef}
+      className="px-4 sm:px-6 md:px-8 lg:px-12 mb-12 md:mb-20"
+    >
       <h3 className="text-center text-xl sm:text-2xl md:text-[1.5rem] font-bold mb-4 sm:mb-6">
         Our Gallery
       </h3>
