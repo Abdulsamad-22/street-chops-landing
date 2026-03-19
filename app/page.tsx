@@ -1,3 +1,4 @@
+import DeliveryService from "@/components/delivery";
 import Footer from "@/components/footer";
 import OurGallery from "@/components/gallery";
 import Hero from "@/components/hero";
@@ -15,6 +16,7 @@ export default function Home() {
       <OurMenu />
       <OpeningHours />
       <OurGallery />
+      <DeliveryService />
       <Footer />
     </div>
   );
