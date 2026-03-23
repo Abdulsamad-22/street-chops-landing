@@ -50,8 +50,8 @@ export default function Footer() {
             </div>
 
             <p className="mb-6">
-              Your trusted partner in buying, selling, and investing in
-              property.
+              Best selling street snack on the go!! Chop with your Paddi without
+              worrying about your balance.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ export default function Footer() {
               <ul>
                 <li className="mb-2">Opening Hours</li>
                 <li className="mb-2">Delivery Plan</li>
-                <li className="mb-2">Projects</li>
+                <li className="mb-2">Blog</li>
               </ul>
             </div>
 
@@ -104,9 +104,8 @@ export default function Footer() {
         <hr className="opacity-15 my-6" />
         <section className="text-gray-600">
           <div className="flex flex-col md:flex-row gap-6 justify-between">
-            <p>Copyright © 2026 Elora. All Rights Reserved</p>
+            <p>Copyright © 2026 Paddi Chops. All Rights Reserved</p>
             <div className="flex flex-col md:flex-row gap-3 md:gap-5">
-              <a href="#">Privacy </a>
               <a href="#">Policy</a>
               <a href="#">About Us</a>
               <a href="#">Support</a>
