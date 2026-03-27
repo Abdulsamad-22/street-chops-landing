@@ -57,7 +57,7 @@ export default function Hero() {
           height={200}
           className="onion-image absolute object-contain 
              w-[180px] sm:w-[180px] md:w-[220px] lg:w-[280px]
-             top-80 sm:top-10 md:top-14
+             top-20 sm:top-10 md:top-14
 -right-16 sm:-right-12 md:-right-20"
         />
 
@@ -78,7 +78,7 @@ export default function Hero() {
           ></path>
         </svg>
       </div>
-      <div className="w-full md:w-1/3 absolute left-0 md:left-45 top-50 md:top-50 hero-text px-4 z-1">
+      <div className="w-full md:w-1/3 absolute left-2 md:left-45 top-50 md:top-50 hero-text px-4 z-1">
         <h1 className="text-[2rem] md:text-[3rem] font-bold">
           Street Flavor. Full Speed.
         </h1>
