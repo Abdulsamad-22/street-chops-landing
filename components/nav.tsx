@@ -50,8 +50,9 @@ export default function Navbar() {
       id="nav-element"
       className="w-full md:w-[90%] bg-[#f3f3f3] flex items-center justify-between fixed top-0 md:top-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)] backdrop-blur-sm px-2 md:pl-6 md:pr-3 py-2 lg:py-3 md:rounded-[38px] z-50"
     >
-      <div className="w-1/3 text-[2rem] font-bold">
-        <Image src="/logo.png" alt="logo" width={45} height={45} className="" />
+      <div className="w-1/3 text-[2rem] italic font-bold">
+        {/* <Image src="/logo.png" alt="logo" width={45} height={45} className="" /> */}
+        Anarvin
       </div>
       <div className="w-2/3 hidden lg:flex items-center justify-center space-x-8 p-2">
         {["Home", "About", "Our menu"].map((item) => {

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Paddi Chops || street snack",
+  title: "Anarvin || street snack, chops and smoothies",
   description:
     "best street burger, shawarma and chops in ushafa, bwari, abuja.",
 };

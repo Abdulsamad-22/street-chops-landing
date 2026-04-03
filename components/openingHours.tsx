@@ -280,14 +280,15 @@ export default function OpeningHours() {
               </div>
             ))}
 
-            <div>
-              <Image
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#b70e10] text-[2.5rem] italic font-bold rounded-[8px]">
+              Anarvin
+              {/* <Image
                 className="absolute bottom-6 left-1/2 -translate-x-1/2"
                 src="/logo.png"
                 alt="logo"
                 width={70}
                 height={70}
-              />
+              /> */}
             </div>
           </div>
           <div

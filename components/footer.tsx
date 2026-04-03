@@ -39,14 +39,15 @@ export default function Footer() {
 
         <section className="flex flex-col md:flex-row gap-8 justify-between text-[#4B5563] py-4">
           <div className="w-full md:w-1/3">
-            <div className="mb-2">
-              <Image
+            <div className="text-[2rem] italic font-bold mb-2">
+              {/* <Image
                 src="/logo.png"
                 alt="logo"
                 width={50}
                 height={50}
                 className=""
-              />
+              /> */}
+              Anarvin
             </div>
 
             <p className="mb-6">
@@ -104,7 +105,7 @@ export default function Footer() {
         <hr className="opacity-15 my-6" />
         <section className="text-gray-600">
           <div className="flex flex-col md:flex-row gap-6 justify-between">
-            <p>Copyright © 2026 Paddi Chops. All Rights Reserved</p>
+            <p>Copyright © 2026 Anarvin. All Rights Reserved</p>
             <div className="flex flex-col md:flex-row gap-3 md:gap-5">
               <a href="#">Policy</a>
               <a href="#">About Us</a>
